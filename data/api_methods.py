@@ -17,10 +17,8 @@ class Pet(APIRequest):
     #     ]
     params = {"status": "sold"}
 
-    def post_upload_image(
-        self, path=f"{d.random_id}/uploadImage", json=str(d.upload_data)
-    ):
-        return self.post(self.endpoint, path, json)
+    def post_upload_image(self, path=f"{11}/uploadImage", files=d.multiple_files, headers=d.headers):
+        return self.post(self.endpoint, path, files, headers)
 
     def post_add_a_new_pet(self):
         return self.post(self.endpoint)

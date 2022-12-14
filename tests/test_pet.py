@@ -2,6 +2,7 @@ import pytest
 import allure
 from data.api_methods import Pet, Store, User
 from data.api_data import RequestData as d
+from
 
 
 @allure.epic("US_001.00.00 | Pet > Everything about your Pets")
